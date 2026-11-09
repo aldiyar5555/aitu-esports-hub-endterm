@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITU Esports Hub - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎮 AITU Esports Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-menu navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
+          <li class="nav-item"><a class="nav-link" href="teams.html">Teams & Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+        </ul>
+        <button id="themeToggleBtn" class="btn btn-outline-light btn-sm">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">AITU Esports Championship 2026</h1>
+      <p class="lead">The official gaming league of Astana IT University</p>
+      <a href="register.html" class="btn btn-primary btn-lg mt-3">Register Team Now</a>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section class="row mb-5">
+      <div class="col-md-8">
+        <h2 class="section-title">Featured Highlights</h2>
+        <div class="card mb-3 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">CS2 Inter-Faculty Cup Registration Open</h5>
+            <p class="card-text">Compete for the 500,000 KZT prize pool! Showcase your skills on FACEIT competitive servers.</p>
+            <a href="tournaments.html" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Valorant & Dota 2 Autumn Showdown</h5>
+            <p class="card-text">Check out the full tournament schedule and roster updates for November 2026.</p>
+            <a href="tournaments.html" class="btn btn-outline-primary btn-sm">Schedule</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h2 class="section-title">Quick Search</h2>
+        <div class="mb-3">
+          <input type="text" id="quickSearchInput" class="form-control" placeholder="Search tournaments or teams...">
+          <ul id="quickSearchResults" class="list-group mt-2 shadow-sm"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 AITU Esports Hub. Created for Web Development Endterm Project.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-effects.js"></script>
+</body>
+</html>

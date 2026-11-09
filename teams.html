@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITU Esports Hub - Teams</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎮 AITU Esports Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-menu navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
+          <li class="nav-item"><a class="nav-link active" href="teams.html">Teams & Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+        </ul>
+        <button id="themeToggleBtn" class="btn btn-outline-light btn-sm">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="mb-4">Registered Teams & Roster Ranks</h1>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">AITU Cyber Eagles</h5>
+            <h6 class="card-subtitle mb-2 text-muted">CS2 Division</h6>
+            <p class="card-text">Faculty of Software Engineering</p>
+            <button class="btn btn-outline-primary btn-sm toggle-roster-btn">Show Roster</button>
+            <div class="roster-details mt-3" style="display:none;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Aldiyar (Captain / AWPer)</li>
+                <li class="list-group-item">Dossymzhan (Rifler)</li>
+                <li class="list-group-item">Nurislambek (Entry)</li>
+                <li class="list-group-item">Alikhan (Support)</li>
+                <li class="list-group-item">Sultan (IGL)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Astana Phoenix</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Dota 2 Division</h6>
+            <p class="card-text">Faculty of Cyber Security</p>
+            <button class="btn btn-outline-primary btn-sm toggle-roster-btn">Show Roster</button>
+            <div class="roster-details mt-3" style="display:none;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">CyberKing (Carry)</li>
+                <li class="list-group-item">MidGod (Mid)</li>
+                <li class="list-group-item">OfflanePro (Offlane)</li>
+                <li class="list-group-item">Supp4 (Soft Support)</li>
+                <li class="list-group-item">WardMaster (Hard Support)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Steppe Warriors</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Valorant Division</h6>
+            <p class="card-text">Faculty of IT Management</p>
+            <button class="btn btn-outline-primary btn-sm toggle-roster-btn">Show Roster</button>
+            <div class="roster-details mt-3" style="display:none;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ViperMain (Duelist)</li>
+                <li class="list-group-item">JettPlayer (Initiator)</li>
+                <li class="list-group-item">OmenGhost (Controller)</li>
+                <li class="list-group-item">CypherSec (Sentinel)</li>
+                <li class="list-group-item">SageHeal (Flex)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 AITU Esports Hub.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-effects.js"></script>
+</body>
+</html>

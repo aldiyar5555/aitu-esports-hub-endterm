@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITU Esports Hub - Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎮 AITU Esports Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-menu navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="tournaments.html">Tournaments</a></li>
+          <li class="nav-item"><a class="nav-link" href="teams.html">Teams & Players</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="register.html">Registration</a></li>
+        </ul>
+        <button id="themeToggleBtn" class="btn btn-outline-light btn-sm">🌙 Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow">
+          <div class="card-header bg-primary text-white">
+            <h3 class="card-title mb-0">Tournament Registration Form</h3>
+          </div>
+          <div class="card-body p-4">
+
+            <div id="successAlert" class="alert alert-success d-none" role="alert">
+              🎉 Registration successful! Your team has been registered for the tournament.
+            </div>
+
+            <form id="registrationForm" novalidate>
+              <div class="mb-3">
+                <label for="teamName" class="form-label">Team Name *</label>
+                <input type="text" class="form-control" id="teamName" placeholder="Enter team name">
+                <div class="invalid-feedback" id="teamNameError">Team name must be at least 3 characters.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="captainEmail" class="form-label">Captain's AITU Email *</label>
+                <input type="email" class="form-control" id="captainEmail" placeholder="student@aitu.edu.kz">
+                <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="gameSelect" class="form-label">Select Tournament Game *</label>
+                <select class="form-select" id="gameSelect">
+                  <option value="">-- Choose Game --</option>
+                  <option value="CS2">Counter-Strike 2</option>
+                  <option value="Dota 2">Dota 2</option>
+                  <option value="Valorant">Valorant</option>
+                  <option value="FC 24">FC 24</option>
+                </select>
+                <div class="invalid-feedback" id="gameError">Please select a tournament game.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="playerCount" class="form-label">Number of Roster Players *</label>
+                <input type="number" class="form-control" id="playerCount" min="1" max="5" placeholder="1 to 5 players">
+                <div class="invalid-feedback" id="playerCountError">Player count must be between 1 and 5.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Account Password *</label>
+                <input type="password" class="form-control" id="password" placeholder="At least 6 characters">
+                <div class="invalid-feedback" id="passwordError">Password must be at least 6 characters.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password *</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter password">
+                <div class="invalid-feedback" id="confirmPasswordError">Passwords do not match.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 AITU Esports Hub.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/jquery-effects.js"></script>
+</body>
+</html>
